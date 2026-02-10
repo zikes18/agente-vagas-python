@@ -63,7 +63,7 @@ def analisar_vaga(texto_vaga):
     while tentativas < 3:
         try:
             response = client.models.generate_content(
-                model="gemini-1.5-flash",
+                model="gemini-flash-latest",
                 contents=prompt_sistema + "\n\n" + texto_vaga
             )
             return response.text
@@ -143,3 +143,4 @@ for termo in TERMOS_BUSCA:
     time.sleep(10)
 
 print("\n🏁 Varredura completa!")
+
