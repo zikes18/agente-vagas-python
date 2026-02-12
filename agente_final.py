@@ -89,6 +89,11 @@ class AgenteVagas:
         
         try:
             resp = requests.get(url, headers=self.headers)
+            # --- Teste de aceito ou bloqueio ---
+            print(f"   📡 Status Code: {resp.status_code}")
+            if resp.status_code != 200:
+                 print(f"   🚫 Acesso bloqueado pelo site!")
+            # ----------------------------------
             soup = BeautifulSoup(resp.text, 'html.parser')
             vagas = soup.find_all('div', class_='cell-list')
 
@@ -192,4 +197,5 @@ class AgenteVagas:
 if __name__ == "__main__":
     bot = AgenteVagas()
     bot.iniciar()
+
 
