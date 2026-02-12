@@ -70,7 +70,7 @@ class AgenteVagas:
         while tentativas < 3:
             try:
                 response = self.client.models.generate_content(
-                    model="gemini-1.5-flash",
+                    model="gemini-flash-latest",
                     contents=prompt + "\n\n" + texto_vaga
                 )
                 return response.text
@@ -192,3 +192,4 @@ class AgenteVagas:
 if __name__ == "__main__":
     bot = AgenteVagas()
     bot.iniciar()
+
