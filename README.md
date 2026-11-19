@@ -78,4 +78,4 @@ Para que a "Memória" funcione (salvar o histórico), vá em **Settings > Action
 Sinta-se à vontade para abrir Issues ou enviar Pull Requests com novas funcionalidades, como adicionar novos sites de emprego ou critérios de filtro!
 
 ---
-*Desenvolvido por Leo Sousa com ☕ e Python em parceria com o Gemini.*
+*Desenvolvido por Leo Sousa com ajuda de Josias Alves e Python em parceria com o Gemini.*
